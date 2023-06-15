@@ -1,0 +1,210 @@
+.to-do-list {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/todolist_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.background {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.to-do-container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title span {
+    font-size: 4rem;
+    font-weight: 600;
+}
+.modal-content {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.to-do-form {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+form input {
+    width: 350px;
+    padding: 15px 15px;
+    caret-color: #6E85B7;
+    border: none;
+    outline: none;
+    background-color: #B2C8DF;
+    font-size: 0.8rem;
+}
+form button {
+    width: 100px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: #B2C8DF;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #6E85B7;
+    transition: all 0.4s ease-in-out;
+}
+.task-list {
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.clear-tasks {
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    background-color: #B2C8DF;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.clear-tasks:hover {
+    background-color: #6E85B7;
+    transition: all 0.3s ease-in-out;
+}
+
+.task-container {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: flex-start;
+}
+
+.task-container::-webkit-scrollbar {
+    display: none;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    gap: 10px;
+    padding: 0 20px 0 20px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 40px;
+    background-color: #6E85B7;
+    justify-content: space-between;
+}
+
+.task-text {
+    display: flex;
+    gap: 5px;
+}
+
+.task-text input {
+    position: relative;
+    top: 1px;
+}
+.task-text span {
+    font-size: 1rem;
+}
+.task-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.task-list span {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.task-item .task-delete {
+    position: relative;
+    top: 3px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: rgb(251, 186, 186);
+}
+.task-item .task-edit {
+    position: relative;
+    top: 3px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: rgb(223, 223, 246);
+}
+.task-edit:hover {
+    color: rgb(120, 120, 143);
+    transition: all 0.4s ease-in-out;
+}
+.task-delete:hover {
+    color: rgb(255, 103, 103);
+    transition: all 0.4s ease-in-out;
+}
+.line-through {
+    text-decoration: line-through;
+}
+
+/* Modal Content */
+#success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 40px;
+    background-color: rgb(214, 249, 214);
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+#danger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 40px;
+    background-color: rgb(250, 180, 180);
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+.modal-content span {
+    color: black;
+    font-size: 0.8rem;
+}
